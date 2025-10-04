@@ -63,3 +63,8 @@ section {
   text-align: center;
 
 }
+
+.row {
+  display: flex;   /* put items in a row */
+  gap: 20px;       /* structured spacing between items */
+}
