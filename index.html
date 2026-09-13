@@ -1,113 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siheng (Simon) Fang's Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/c22a7be551.js" crossorigin="anonymous"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Simon Fang is a Vancouver-based sound designer, audio technologist, postproduction editor, and music producer.">
+  <meta name="theme-color" content="#090b10">
+  <title>Simon Fang — Sound Designer & Audio Technologist</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090b10'/%3E%3Cpath d='M8 32h7l4-13 7 29 7-35 7 38 6-27 4 8h6' fill='none' stroke='%23c8ff56' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="subpages.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/c22a7be551.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <h1 style="font-family: fantasy;">Siheng (Simon) Fang</h1>
-        <p style="font-family: fantasy;">Programmer, SongWriter, Producer</p>
-
-        <!-- icons -->
-        <a href="https://www.linkedin.com/feed/?trk=404_page" target="_blank" class="icon"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/simon7fang/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
-        <a href="mailto:simonfang2002@gmail.com" class="icon"><i class="fa-regular fa-envelope" ></i></a>
-        <a href="https://open.spotify.com/artist/73ZlMeb2YOVsfy6nCmjIn3?si=zPywpYElQQSmKeFw_qyXkg" target="_blank" class="icon"><i class="fa-brands fa-spotify"></i></a>
-        <a href="https://music.apple.com/ca/artist/simoni%E8%8E%AB%E5%B0%BC/1704818552" target="_blank" class="icon"><i class="fa-solid fa-music"></i></a>
-        <a href="https://youtube.com/playlist?list=OLAK5uy_kDOIX_6NCLoGuz0YLyv54Z_WVKFf-YEEA&si=j8MP61WNu4O-9Orn" target="_blank" class="icon"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://amazon.com/music/player/albums/B0CGLVQR6P?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Tq6qXoTdNPPzAw2jKC6bEblte" target="_blank" class="icon"><i class="fa-brands fa-amazon"></i></a>
-        
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#music">Music</a></li>
-            <li><a href="#game">Programing</a></li>
-            <li><a href="./other_pdf/CV_SihengFang.pdf" target="_blank">Resume</a></li>
-        </ul>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Simon Fang, home"><span class="brand-mark">SF</span><span>SIMON FANG</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a><a href="portfolio.html">Portfolio</a><a href="process.html">Behind the scenes</a><a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p style="text-indent: 2em;">Hi, I'm Simon. This website is a place to store some of my past works. Welcome and feel free to look over them.</p>
-        <p style="text-indent: 2em;">I started off being a Cognitive System (COGS) student at UBC. Later I discovered my interest in music and audio processing. So I did my <a href="./other_pdf/Music Cognition Essay.pdf" target="_blank">final COGS project</a> on music cognition. Becuase becoming a researcher doesn't align with my career goal. I decided to attend Lasalle College for a Diploma of Recording Arts, where I could gain more practical experiences in audio processing.</p>
-    </section>
-
-    <section id="music">
-        <h2>Music</h2>
-        <p style="text-indent: 2em;">My interest lands on music production (writing + sound design + arrangement + mixing),mainly for the genres of folk, R&B, and pop. I'm excited for the unknown "chemical reaction" happening in the process of creating. I also enjoy trying out different music styles.</p>
-        <div class="scroll-container">
-          <div class="scroll-item container">
-            <img src="./pic/《Cure》封面.jpg" alt="" class="image">
-          </div>
-          <div class="scroll-item">
-            <img src="./pic/《PinkLeak》封面.jpeg" alt="" class="image">
-          </div>
-          <div class="scroll-item">
-            <img src="./pic/《踏上旅途Take the Journey（续写改编版）》封面.jpg" alt="" class="image">
-          </div>
-          <div class="scroll-item">
-            <img src="./pic/《Noise》封面.JPG" alt="" class="image">
-          </div>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="waveform" aria-hidden="true"></canvas>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> Vancouver · Available for audio work</p>
+        <h1 id="hero-title">I build worlds<br>you can <em>hear.</em></h1>
+        <p class="hero-intro">Sound Design, Postproduction, Music Production, Audio Technology</p>
+        <div class="hero-actions">
+          <a class="button primary" href="portfolio.html">Explore selected work <span>↗</span></a>
+          <a class="button quiet" href="mailto:simonfang2002@gmail.com">Start a conversation</a>
         </div>
-        <h3>Some example music (check the music platform icons above for more)</h3>
-        <div class="row">
-          <div>
-            <h5>Take the Journey Remix</h5>
-            <audio controls src="./audio/Take the Journey Plus.wav"></audio>
-          </div>
-          <div>
-            <h5>A happy song</h5>
-            <audio controls src="./audio/A happy song.wav"></audio>
-          </div>
-          <div>
-            <h5>Raindrop</h5>
-            <audio controls src="./audio/雨滴Raindrop母带处理.wav"></audio>
-          </div>
-          <div>
-            <h5>It's time to let it go (vocal have not yet recorded)</h5>
-            <audio controls src="./audio/It's time to let it go Beat.mp3"></audio>
-          </div>
-        </div>
-        
-        <h3>Production Process Demonstration</h3>
-        <div class="row">
-          <video src="./video/LogicProVideo.mp4" width="500px" controls track></video>
-          <p>This video walks through my process of creating music. I show how I build melodies, layer sounds, and adjust dynamics. You'll see the tools and techniques I use in my production. The goal is to give you a behind-the-scenes look at how I approach creating music tracks.</p>
-        </div>
-        
-        <h3>MAX Msp Project Demonstration</h3>
-        <div class="row">
-          <video src="./video/maxMSP.mp4" width="500px" controls></video>
-          <p>This video demonstrates a Max/MSP project where I built a custom mixing board. I wired together different components and programmed modules such as a recorder, player, and other signal controls to create a functional system. The video shows both the technical setup and how the board can be used in practice, offering a look into my approach to interactive audio design.</p>
-        </div>
-    </section>
-      
-    <section id="game">
-      <h2>Programming</h2>
-      <h3>Programming Process Demonstration</h3>
-      <div class="row">
-        <video src="./video/vsCode.mp4" width="500px" controls></video>
-        <div>
-          <p>This video showcases my personal website and database project, highlighting my programming foundation in HTML, CSS, JavaScript, and SQL. I walk through the site's design, functionality, and how it connects with the database to manage and organize content. The goal is to demonstrate my ability to build both the front-end and back-end aspects of such projects. Below are the milestones of the database project (the cover page has been removed to respect the confidentiality of my teammates).</p>
-          <br>
-          <a href="https://github.com/simonf-hub/2024W1_CPSC304Project.git" target="_blank">github_link</a>
-        </div>   
       </div>
+      <div class="hero-meter" aria-hidden="true"><span>L</span><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><span>R</span></div>
       
-    
-      <h3>GameMade "Antodote" - Trailer</h3>
-      <div class="row">
-        <video src="./video/Antidote 30XX Trailer.mp4" width="500px" controls></video>
-        <p>This trailer presents *Antidote*, a collaborative role-playing game project developed in Unity using C#. I contributed to the design of gameplay mechanics, player movement development, and debugging, as well as modeling of the game scene with Blender. The video highlights both the creative and technical aspects of the project, showcasing the team's work from concept to implementation.</p>
+    </section>
+
+    <section class="work section" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <div><p class="kicker">01 / Selected work</p><h2 id="work-title">Sound, from signal<br>to story.</h2></div>
+        <p class="section-note">Filter by discipline. Open a project to see my role, process, and tools.</p>
+      </div>
+      <a class="text-route" href="portfolio.html">View the complete portfolio <span>↗</span></a>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all" aria-pressed="true">All work</button>
+        <button class="filter" data-filter="post">Postproduction</button>
+        <button class="filter" data-filter="design">Sound design</button>
+        <button class="filter" data-filter="music">Music</button>
+        <button class="filter" data-filter="tech">Audio tech</button>
+      </div>
+      <div class="project-grid">
+        <article class="project project-featured" data-category="post design" tabindex="0" role="button" aria-label="Open film postproduction project">
+          
+          <div class="project-visual visual-film"><span class="frame-code">SC 01 · 00:42:17</span><div class="orb"></div><div class="timeline"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="play-mark">▶</span></div>
+          <div class="project-copy"><p class="project-type">Film · Postproduction / Sound Design</p><h3>Narrative Film Sound</h3><p>Dialogue, ambience, Foley, editorial, and final mix shaped around character and picture.</p><span class="project-link">View case study <b>↗</b></span></div>
+          <div class="project-detail" hidden><p>My postproduction workflow begins with story: spotting the emotional arc, organizing dialogue and production sound, then building a believable world through ambience, Foley, effects, and music. The final mix keeps each layer intentional and supports the cut.</p><dl><div><dt>Role</dt><dd>Sound editor · Re-recording mixer</dd></div><div><dt>Focus</dt><dd>Dialogue · Foley · Atmospheres · Mix</dd></div></dl></div>
+        </article>
+
+        <article class="project" data-category="music" tabindex="0" role="button" aria-label="Open music production project">
+          <div class="project-visual visual-music"><div class="vinyl"><span></span></div><div class="grooves"></div><span class="project-number">02</span></div>
+          <div class="project-copy"><p class="project-type">Original releases · Music Production</p><h3>Cure / PinkLeak</h3><p>Songwriting, arrangement, recording, vocal production, mixing, and release.</p><span class="project-link">View case study <b>↗</b></span></div>
+          <div class="project-detail" hidden><p>Original music developed end to end—from lyric and melodic ideas through arrangement, tracking, vocal editing, sound selection, mixing, and release. The work moves across pop, R&B, and folk-influenced production.</p><dl><div><dt>Role</dt><dd>Songwriter · Producer · Mix engineer</dd></div><div><dt>Listen</dt><dd><a href="https://open.spotify.com/artist/73ZlMeb2YOVsfy6nCmjIn3" target="_blank" rel="noreferrer">Spotify ↗</a> · <a href="https://music.apple.com/ca/artist/simoni%E8%8E%AB%E5%B0%BC/1704818552" target="_blank" rel="noreferrer">Apple Music ↗</a></dd></div></dl></div>
+        </article>
+
+        <article class="project" data-category="tech design" tabindex="0" role="button" aria-label="Open interactive audio project">
+          <div class="project-visual visual-tech"><div class="patch-lines"><i></i><i></i><i></i><i></i></div><div class="node n1">IN</div><div class="node n2">FX</div><div class="node n3">OUT</div><span class="project-number">03</span></div>
+          <div class="project-copy"><p class="project-type">Max/MSP · Interactive Audio</p><h3>Performance System</h3><p>A playable signal-processing instrument built for live vocal transformation.</p><span class="project-link">View case study <b>↗</b></span></div>
+          <div class="project-detail" hidden><p>A custom Max/MSP performance system combining recording and playback, eight-voice polyphony, envelopes, modulation, routing, and MIDI control in one performer-friendly interface.</p><dl><div><dt>Role</dt><dd>Designer · Programmer · Performer</dd></div><div><dt>Tools</dt><dd>Max/MSP · MIDI · Live signal processing</dd></div></dl></div>
+        </article>
+
+        <article class="project" data-category="design tech" tabindex="0" role="button" aria-label="Open game audio project">
+          <div class="project-visual visual-game"><div class="radar"><span></span></div><div class="coordinates">X 042.8<br>Y 118.3<br>Z 006.1</div><span class="project-number">04</span></div>
+          <div class="project-copy"><p class="project-type">Game Audio · Unity / FMOD</p><h3>Interactive Sound Worlds</h3><p>Responsive audio systems connecting player input, space, and emotional feedback.</p><span class="project-link">View case study <b>↗</b></span></div>
+          <div class="project-detail" hidden><p>Interactive sound systems designed around player action: parameter-driven engine and ambience behavior, spatial sound emitters, responsive feedback cues, and implementation inside Unity.</p><dl><div><dt>Role</dt><dd>Sound designer · Audio implementer</dd></div><div><dt>Tools</dt><dd>FMOD · Unity · C#</dd></div></dl></div>
+        </article>
       </div>
     </section>
 
+    <section class="practice section" id="practice" aria-labelledby="practice-title">
+      <div class="section-head"><div><p class="kicker">02 / Practice</p><h2 id="practice-title">One practice.<br>Four perspectives.</h2></div></div>
+      <div class="practice-list">
+        <div class="practice-row"><span>01</span><h3>Sound Design</h3><p>World-building through Foley, field recording, synthesis, and layered effects.</p></div>
+        <div class="practice-row"><span>02</span><h3>Postproduction</h3><p>Dialogue editing, noise repair, ambience, editorial, and picture-led mixing.</p></div>
+        <div class="practice-row"><span>03</span><h3>Music Production</h3><p>Songwriting through final mix, with an ear for pop detail and emotional pacing.</p></div>
+        <div class="practice-row"><span>04</span><h3>Audio Technology</h3><p>Interactive systems in FMOD, Unity, and Max/MSP that make sound playable.</p></div>
+      </div>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="about-signal" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div><p class="kicker">03 / About</p><h2 id="about-title"></h2></div>
+      <div class="about-copy"><p>I’m Simon Fang, a Vancouver-based audio creator with a background spanning cognitive systems, recording arts, music production, and interactive media.</p><p>I care about the moment technical decisions become emotional ones—when a texture changes how a scene feels, or a system makes the world respond naturally to the player.</p><div class="capabilities"><span>Pro Tools</span><span>Logic Pro</span><span>Ableton Live</span><span>FMOD</span><span>Unity</span><span>Max/MSP</span><span>Field Recording</span><span>Mixing</span></div></div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <p class="kicker">04 / Contact</p><h2 id="contact-title">Have a world<br>that needs a sound?</h2>
+      <a class="contact-link" href="mailto:simonfang2002@gmail.com"><span>simonfang2002@gmail.com</span><b>↗</b></a>
+      <footer><span>© 2026 Simon Fang</span><div><a href="portfolio.html">Portfolio</a><a href="process.html">Behind the scenes</a><a href="https://www.linkedin.com/in/simonfang" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://open.spotify.com/artist/73ZlMeb2YOVsfy6nCmjIn3" target="_blank" rel="noreferrer">Spotify</a></div></footer>
+    </section>
+  </main>
+
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close project"></button><div class="dialog-type"></div><h2 id="dialog-title"></h2><div class="dialog-body"></div></dialog>
+
+  <script src="floating-bar.js"></script>
 </body>
 </html>
