@@ -1,11 +1,159 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Behind the scenes of Simon Fang's audio practice."><title>Behind the Scenes — Simon Fang</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="subpages.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><script src="script.js" defer></script></head>
-<body><div class="noise"></div><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">SF</span><span>SIMON FANG</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button><nav id="nav"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="process.html" aria-current="page">Behind the scenes</a><a href="mailto:simonfang2002@gmail.com">Contact</a></nav></header>
-<main class="subpage"><section class="page-intro section"><p class="kicker">Process / Systems / Experiments</p><h1>Behind<br>the scenes</h1><p>The finished sound is only half the story. Here are the sessions, decisions, signal flows, and experiments that shaped the result.</p></section>
-<section class="process-steps section"><div class="section-head"><div><p class="kicker">01 / Workflow</p><h2>From brief<br>to final mix.</h2></div><p class="section-note">A flexible process anchored to emotion, function, and the audience’s experience.</p></div><div class="step-list">
-<article><span>01</span><div><p class="project-type">Listen / Spot</p><h3>Find the story</h3><p>Map emotional beats, point of view, pacing, technical constraints, and the moments where sound must lead—or disappear.</p></div><b>↘</b></article>
-<article><span>02</span><div><p class="project-type">Record / Build</p><h3>Create the palette</h3><p>Field recordings, Foley, synthesis, instruments, and voice become a focused library with a shared sonic character.</p></div><b>↘</b></article>
-<article><span>03</span><div><p class="project-type">Edit / Implement</p><h3>Make it respond</h3><p>Shape timing, dynamics, space, and transitions, then connect sounds to picture, player input, or live performance.</p></div><b>↘</b></article>
-<article><span>04</span><div><p class="project-type">Mix / Iterate</p><h3>Protect the intention</h3><p>Test in context, revise with feedback, and deliver a mix that translates while keeping its emotional center.</p></div><b>✓</b></article></div></section>
-<section class="session section"><div><p class="kicker">02 / Session view</p><h2>Layers with<br>a reason.</h2><p class="session-copy">Every track should answer a question: what does it tell us, what does it make us feel, and why is it here now?</p></div><div class="session-board"><div class="session-ruler">00:00 <span>00:15</span><span>00:30</span><span>00:45</span></div><div class="track"><label>DX</label><i style="--start:3%;--width:68%"></i></div><div class="track"><label>FOLEY</label><i style="--start:14%;--width:46%"></i></div><div class="track"><label>AMB</label><i style="--start:2%;--width:94%"></i></div><div class="track"><label>SFX</label><i style="--start:48%;--width:34%"></i></div><div class="track"><label>MX</label><i style="--start:8%;--width:86%"></i></div><div class="playhead"></div></div></section>
-<section class="notes section"><p class="kicker">03 / What lives here</p><div class="notes-grid"><article><span>FIELD NOTE 001</span><h3>Foley & location recording</h3><p>Microphone choice, room tone, prop performance, cleanup, and useful libraries built from imperfect spaces.</p></article><article><span>SYSTEM NOTE 002</span><h3>FMOD & Unity logic</h3><p>Parameter maps, loop-release behavior, randomized events, spatial emitters, and sound that follows player intent.</p></article><article><span>PATCH NOTE 003</span><h3>Max/MSP experiments</h3><p>Signal flow, polyphony, modulation, envelopes, and technical controls turned into a legible performance interface.</p></article><article><span>SESSION NOTE 004</span><h3>Production breakdowns</h3><p>Arrangement choices, vocal chains, automation, transitions, and how a song moves from demo to master.</p></article></div></section>
-<section class="next-route section"><p class="kicker">Hear the outcomes</p><a href="portfolio.html">Explore the portfolio <span>↗</span></a></section></main></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Behind the scenes of Simon Fang's audio practice.">
+    <title>Behind the Scenes — Simon Fang</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="subpages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="noise"></div>
+
+    <!-- Site header -->
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">SF</span>
+        <span>SIMON FANG</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="process.html" aria-current="page">Behind the scenes</a>
+        <a href="mailto:simonfang2002@gmail.com">Contact</a>
+      </nav>
+    </header>
+    <main class="subpage">
+      <!-- Page introduction -->
+      <section class="page-intro section">
+        <p class="kicker">Process / Systems / Experiments</p>
+        <h1>Behind<br>the scenes</h1>
+        <p>The finished sound is only half the story. Here are the sessions, decisions, signal flows, and experiments that shaped the result.</p>
+      </section>
+      <!-- Four-stage audio workflow -->
+      <section class="process-steps section">
+        <div class="section-head">
+          <div>
+            <p class="kicker">01 / Workflow</p>
+            <h2>From brief<br>to final mix.</h2>
+          </div>
+          <p class="section-note">A flexible process anchored to emotion, function, and the audience’s experience.</p>
+        </div>
+        <div class="step-list">
+          <article>
+            <span>01</span>
+            <div>
+              <p class="project-type">Listen / Spot</p>
+              <h3>Find the story</h3>
+              <p>Map emotional beats, point of view, pacing, technical constraints, and the moments where sound must lead—or disappear.</p>
+            </div>
+            <b>↘</b>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <p class="project-type">Record / Build</p>
+              <h3>Create the palette</h3>
+              <p>Field recordings, Foley, synthesis, instruments, and voice become a focused library with a shared sonic character.</p>
+            </div>
+            <b>↘</b>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <p class="project-type">Edit / Implement</p>
+              <h3>Make it respond</h3>
+              <p>Shape timing, dynamics, space, and transitions, then connect sounds to picture, player input, or live performance.</p>
+            </div>
+            <b>↘</b>
+          </article>
+          <article>
+            <span>04</span>
+            <div>
+              <p class="project-type">Mix / Iterate</p>
+              <h3>Protect the intention</h3>
+              <p>Test in context, revise with feedback, and deliver a mix that translates while keeping its emotional center.</p>
+            </div>
+            <b>✓</b>
+          </article>
+        </div>
+      </section>
+      <!-- Stylized audio session -->
+      <section class="session section">
+        <div>
+          <p class="kicker">02 / Session view</p>
+          <h2>Layers with<br>a reason.</h2>
+          <p class="session-copy">Every track should answer a question: what does it tell us, what does it make us feel, and why is it here now?</p>
+        </div>
+        <div class="session-board">
+          <div class="session-ruler">00:00 <span>00:15</span>
+            <span>00:30</span>
+            <span>00:45</span>
+          </div>
+          <div class="track">
+            <label>DX</label>
+            <i style="--start:3%;--width:68%"></i>
+          </div>
+          <div class="track">
+            <label>FOLEY</label>
+            <i style="--start:14%;--width:46%"></i>
+          </div>
+          <div class="track">
+            <label>AMB</label>
+            <i style="--start:2%;--width:94%"></i>
+          </div>
+          <div class="track">
+            <label>SFX</label>
+            <i style="--start:48%;--width:34%"></i>
+          </div>
+          <div class="track">
+            <label>MX</label>
+            <i style="--start:8%;--width:86%"></i>
+          </div>
+          <div class="playhead"></div>
+        </div>
+      </section>
+      <!-- Process-note categories -->
+      <section class="notes section">
+        <p class="kicker">03 / What lives here</p>
+        <div class="notes-grid">
+          <article>
+            <span>FIELD NOTE 001</span>
+            <h3>Foley & location recording</h3>
+            <p>Microphone choice, room tone, prop performance, cleanup, and useful libraries built from imperfect spaces.</p>
+          </article>
+          <article>
+            <span>SYSTEM NOTE 002</span>
+            <h3>FMOD & Unity logic</h3>
+            <p>Parameter maps, loop-release behavior, randomized events, spatial emitters, and sound that follows player intent.</p>
+          </article>
+          <article>
+            <span>PATCH NOTE 003</span>
+            <h3>Max/MSP experiments</h3>
+            <p>Signal flow, polyphony, modulation, envelopes, and technical controls turned into a legible performance interface.</p>
+          </article>
+          <article>
+            <span>SESSION NOTE 004</span>
+            <h3>Production breakdowns</h3>
+            <p>Arrangement choices, vocal chains, automation, transitions, and how a song moves from demo to master.</p>
+          </article>
+        </div>
+      </section>
+      <!-- Link back to the portfolio -->
+      <section class="next-route section">
+        <p class="kicker">Hear the outcomes</p>
+        <a href="portfolio.html">Explore the portfolio <span>↗</span>
+        </a>
+      </section>
+    </main>
+    <script src="floating-bar.js"></script>
+  </body>
+</html>
+portfolio.html
+HTML
