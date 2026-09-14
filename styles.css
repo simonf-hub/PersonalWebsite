@@ -1189,3 +1189,40 @@ dialog h2 {
   object-fit: cover;
   object-position: center;
 }
+
+/* Project audio player
+   ========================================================================== */
+
+.project-audio {
+  margin: 1rem 0;
+  padding: 1.25rem;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
+}
+
+.audio-heading {
+  margin-bottom: 1rem;
+}
+
+.audio-label {
+  display: block;
+  margin-bottom: 0.35rem;
+
+  color: var(--acid);
+  font: 500 0.68rem "DM Mono", monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.song-title {
+  margin: 0;
+  color: var(--paper);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.project-audio audio {
+  display: block;
+  width: 100%;
+}

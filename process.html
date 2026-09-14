@@ -7,6 +7,7 @@
     <title>Behind the Scenes — Simon Fang</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="subpages.css">
+    <link rel="stylesheet" href="gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -36,52 +37,97 @@
         <h1>Behind<br>the scenes</h1>
         <p>The finished sound is only half the story. Here are the sessions, decisions, signal flows, and experiments that shaped the result.</p>
       </section>
-      <!-- Four-stage audio workflow -->
-      <section class="process-steps section">
+      <!-- Behind-the-scenes media gallery -->
+      <section class="bts-media section">
         <div class="section-head">
           <div>
-            <p class="kicker">01 / Workflow</p>
-            <h2>From brief<br>to final mix.</h2>
+            <p class="kicker">01 / In the field</p>
+            <h2>Behind<br>the sound.</h2>
           </div>
-          <p class="section-note">A flexible process anchored to emotion, function, and the audience’s experience.</p>
+          <p class="section-note">
+            Studio sessions, production-sound setups, experiments, and the
+            practical work that happens before the final mix.
+          </p>
         </div>
-        <div class="step-list">
-          <article>
-            <span>01</span>
-            <div>
-              <p class="project-type">Listen / Spot</p>
-              <h3>Find the story</h3>
-              <p>Map emotional beats, point of view, pacing, technical constraints, and the moments where sound must lead—or disappear.</p>
-            </div>
-            <b>↘</b>
-          </article>
-          <article>
-            <span>02</span>
-            <div>
-              <p class="project-type">Record / Build</p>
-              <h3>Create the palette</h3>
-              <p>Field recordings, Foley, synthesis, instruments, and voice become a focused library with a shared sonic character.</p>
-            </div>
-            <b>↘</b>
-          </article>
-          <article>
-            <span>03</span>
-            <div>
-              <p class="project-type">Edit / Implement</p>
-              <h3>Make it respond</h3>
-              <p>Shape timing, dynamics, space, and transitions, then connect sounds to picture, player input, or live performance.</p>
-            </div>
-            <b>↘</b>
-          </article>
-          <article>
-            <span>04</span>
-            <div>
-              <p class="project-type">Mix / Iterate</p>
-              <h3>Protect the intention</h3>
-              <p>Test in context, revise with feedback, and deliver a mix that translates while keeping its emotional center.</p>
-            </div>
-            <b>✓</b>
-          </article>
+        <div class="bts-grid">
+          <!-- Replace this placeholder with:
+          <img src="images/studio-session.jpg"
+               alt="Simon working during a studio recording session">
+          -->
+          <figure class="media-card media-card-featured media-card-landscape">
+            <img src="./BTSphotos/RecordingMics.png" alt="">
+            <figcaption>
+              <span>Recording</span>
+              <p>Building the sound at the source.</p>
+            </figcaption>
+          </figure>
+
+          <!-- Replace with a local video or YouTube iframe. -->
+          <figure class="media-card media-card-portrait">
+            <img src="./BTSphotos/studioMixing.png" alt="">
+            <figcaption>
+              <span>Production sound</span>
+              <p>Boom, wireless audio, and timecode on set.</p>
+            </figcaption>
+          </figure>
+
+          <!-- Replace this placeholder with another behind-the-scenes image. -->
+          <figure class="media-card media-card-portrait">
+            <img src="./BTSphotos/boomOperation.JPG" alt="">
+            <figcaption>
+              <span>Audio technology</span>
+              <p>Designing systems that make sound responsive.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="media-card media-card-portrait">
+            <img src="./BTSphotos/onSite.JPG" alt="">
+            <figcaption>
+              <span>Audio technology</span>
+              <p>Designing systems that make sound responsive.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="media-card media-card-portrait">
+            <img src="./BTSphotos/livemixing.JPG" alt="">
+            <figcaption>
+              <span>Audio technology</span>
+              <p>Designing systems that make sound responsive.</p>
+            </figcaption>
+          </figure>
+
+
+          <!-- Duplicate any media-card to add more photographs or videos. -->
+          <figure class="media-card media-card-video">
+            <img src="./BTSphotos/foley.JPG" alt="">
+            <figcaption>
+              <span>Audio technology</span>
+              <p>Designing systems that make sound responsive.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="media-card media-card-video">
+            <video controls preload="metadata">
+              <source
+                src="./BTSphotos/GameSound.mov"
+                type="video/mp4"
+              >
+              Your browser does not support the video player.
+            </video>
+            <figcaption>
+              <span>Postproduction</span>
+              <p>Shaping detail, dynamics, and space.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="media-card media-card-wide media-card-video">
+            <img src="./BTSphotos/Screenshot_Protools.png" alt="">
+            <figcaption>
+              <span>Postproduction</span>
+              <p>Shaping detail, dynamics, and space.</p>
+            </figcaption>
+          </figure>
+
         </div>
       </section>
       <!-- Stylized audio session -->
@@ -155,5 +201,3 @@
     <script src="floating-bar.js"></script>
   </body>
 </html>
-portfolio.html
-HTML
